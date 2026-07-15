@@ -14,7 +14,7 @@ PlasmoidItem {
     // Match the bar's glide time to the poll interval so it animates
     // continuously the whole time instead of snapping fast then sitting
     // frozen until the next sample (which reads as jumpy).
-    readonly property int animDuration: (plasmoid.configuration.updateInterval || 2) * 1000
+    readonly property int animDuration: 250
 
     // Smoothed (EMA) read/write throughput per drive, MiB/s.
     property real read1: 0
