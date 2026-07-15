@@ -10,7 +10,7 @@
         "Icon": "speedometer",
         "Id": "local.widget.disk-speed",
         "Name": "Disk Speed",
-        "Version": "1.0"
+        "Version": "1.0.1"
     },
     "KPackageStructure": "Plasma/Applet",
     "X-Plasma-API-Minimum-Version": "6.0"
