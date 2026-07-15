@@ -2,7 +2,10 @@
 
 A KDE Plasma panel widget showing real-time read and write throughput for up to four drives as vertical bars.
 
-![disk-speed](disk-speed.png)
+ <p align="center"> <img src="disk-speed.png" alt="Disk Speed"> </p> 
+ <br><br>
+ <br><br>
+ <br><br>
 ![disk-speed](desktop-1.png)
 
 ## Features
