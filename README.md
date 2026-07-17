@@ -5,7 +5,6 @@ A KDE Plasma panel widget showing real-time read and write throughput for up to 
 <p align="center">
   <img src="disk-speed.png" alt="Disk Speed">
 </p>
-<br><br>
 <img src="disk.speed3.png" alt="Disk Speed">
 <img src="desktop-1.png" alt="Disk Speed">
 <
