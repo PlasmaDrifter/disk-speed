@@ -1,45 +1,52 @@
-# Disk Speed
+# Disk Speed Monitor Widget
 
-A KDE Plasma panel widget showing real-time read and write throughput for up to four drives as vertical bars.
-<br><br>
+[![KDE Plasma 6](https://img.shields.io/badge/KDE_Plasma-6.0+-3152A0?style=for-the-badge&logo=kde&logoColor=white)](https://kde.org/plasma-desktop/)
+[![QML](https://img.shields.io/badge/UI-QML%2FQt6-41CD52?style=for-the-badge&logo=qt&logoColor=white)](https://doc.qt.io/qt-6/qtqml-index.html)
+[![Category](https://img.shields.io/badge/I%2FO%20Performance-FF2D55?style=for-the-badge&logo=speedometer&logoColor=white)](https://github.com/PlasmaDrifter)
+[![License](https://img.shields.io/badge/License-GPLv2-blue.svg?style=for-the-badge)](LICENSE)
 
-<img src="disk-speed.png" alt="Disk Speed">
-<img src="disk.speed3.png" alt="Disk Speed">
-<img src="desktop-1.png" alt="Disk Speed">
-<
+A real-time disk read/write throughput speed gauge for KDE Plasma 6.
 
+---
 
+## Previews
+
+![Disk Speed Monitor Widget Preview](disk-speed.png)
+
+![Disk Speed Monitor Widget Preview](disk.speed3.png)
+
+![Disk Speed Monitor Widget Preview](desktop-1.png)
+
+---
 
 ## Features
 
-- Combined read + write throughput per drive
-- Up to 4 drives monitored simultaneously
-- Per-drive configurable colours
-- Per-drive speed scale (bar fills at your chosen maximum)
-- Compact vertical bar layout
+- **Real-time**: disk Read and Write speed monitoring (MB/s)
+- **Supports**: all active storage controllers (NVMe, SSD, HDD)
+- **Transparent**: and compact display options
+- **Low**: polling overhead
 
 ## Requirements
 
-- KDE Plasma 6.0+
-- `org.kde.ksysguard.sensors` (included with Plasma)
+- **Environment**: KDE Plasma 6.0 or higher
+- **Framework**: Qt6 QML / Plasma Applet API
 
 ## Installation
 
+### Option 1: Git Clone (Recommended)
 ```bash
-cd ~/.local/share/plasma/plasmoids/
-git clone https://github.com/PlasmaDrifter/disk-speed local.widget.disk-speed
+mkdir -p ~/.local/share/plasma/plasmoids/
+git clone https://github.com/PlasmaDrifter/disk-speed.git ~/.local/share/plasma/plasmoids/local.widget.disk-speed
 ```
 
-Then right-click your panel → **Add Widgets** → search for **Disk Speed**.
+### Option 2: Plasma Package Installer
+```bash
+kpackagetool6 -i ~/.local/share/plasma/plasmoids/local.widget.disk-speed
+```
 
-## Configuration
+Then right-click your desktop or panel $\rightarrow$ **Add Widgets...** and search for the widget name.
 
-Right-click the widget → **Configure…**
+## Credits & License
 
-| Option | Description |
-|--------|-------------|
-| Drive 1–4 device | Block device name (e.g. `sda`, `nvme0n1`) |
-| Drive 1–4 colour | Bar colour for that drive |
-| Drive 1–4 max speed | Full-scale throughput (MB/s) for that drive's bar |
-| Refresh interval | Update frequency (seconds) |
-
+- **Author / Maintainer**: PlasmaDrifter
+- **License**: Licensed under the [GPLv2](LICENSE).
